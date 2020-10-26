@@ -1,0 +1,169 @@
+<template>
+  <div class="portfolio">
+    <section class="columns">
+      <h3 class="section-title">Portfolio</h3>
+
+      <div class="portfolio-grid-laptop">
+        <div class="column" v-for="(value, key) in items" :key="key" >
+          <div :id="value.id" class="portfolio-button" :style="{ background: value.background }">{{ value.name }}</div>
+        </div>
+      </div>
+
+      <div class="portfolio-grid-mobile">
+        <agile :slidesToShow="2" :infinite="false">
+          <template v-slot:default>
+            <div class="slide">
+                <h3>slide 1</h3>
+            </div>      
+            <div class="slide">
+                <h3>slide n</h3>
+            </div>
+          </template>
+        </agile>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+import { VueAgile } from 'vue-agile' 
+
+export default {
+  name: 'Portfolio',
+  components: {
+    agile: VueAgile 
+  },
+  data () {
+    return {
+      items: [
+        {
+          name: 'Dish',
+          id: 'dish',
+          background: '#e41932',
+          path: '/dish',
+          logo: '../assets/img/tv-logo-oskr-pabon.png'
+        },
+        {
+          name: 'Sproutloud',
+          id: 'sproutloud',
+          background: '#394047',
+          path: '/sproutloud',
+          logo: '../assets/img/tv-logo-oskr-pabon.png'
+        },
+        {
+          name: 'Gess',
+          id: 'gess',
+          background: '#000000',
+          path: '/gess',
+          logo: '../assets/img/tv-logo-oskr-pabon.png'
+        }
+      ]
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+@import url('https://unpkg.com/vue-agile/dist/VueAgile.css');
+
+h3 {
+  display: BLOCK;
+  font-size: 52px;
+  font-weight: 800;
+  margin: 0 0 40px 0;
+  text-align: center;
+  width: 100%;
+}
+.portfolio {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  .users-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    max-width: 100%;
+
+    img { height: intrinsic; }
+  }
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+    width: 90%;
+
+    .agile { width: 100%; }
+
+    .portfolio-grid-mobile {
+      align-items: center;
+      display: none;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .portfolio-grid-laptop {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 60px;
+      width: 60%;
+    }
+  }
+}
+
+.portfolio-button {
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-weight: 800;
+  font-size: 16px;
+  height: 200px;
+  justify-content: center;
+  position: relative;
+  transform: scale(1);
+  width: 200px;
+  z-index: 1;
+
+  -webkit-transition: transform .5s ease-out;
+  -moz-transition: transform .5s ease-out;
+  -ms-transition: transform .5s ease-out;
+  transition: transform .5s ease-out;
+}
+
+.portfolio-button:hover {
+  transform: scale(1.1);
+  z-index: 2;
+
+  -webkit-transition: transform .5s ease-out;
+  -moz-transition: transform .5s ease-out;
+  -ms-transition: transform .5s ease-out;
+  transition: transform .5s ease-out;
+}
+
+@media only screen and (max-width: 768px) {
+  h2 { font-size: 30px; }
+  .portfolio {
+    height: auto;
+    padding-bottom: 50px;
+
+    .users-image { margin-bottom: 30px; }
+    .columns { 
+      width: 100%; 
+
+      .column { 
+        padding: 10px 30px;
+        width: 100%; 
+      }
+    }
+    .portfolio-grid-laptop { display: none;}
+    .portfolio-grid-mobile { display: flex;}
+  }
+}
+</style>
