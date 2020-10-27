@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <transition name="fade" mode="out-in">
+    <transition name="fade" mode="out-in" @after-leave="$root.$emit('triggerScroll')">
       <router-view/>
     </transition>
   </div>

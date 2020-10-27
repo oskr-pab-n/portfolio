@@ -2,7 +2,7 @@
   <div class="home">
     <MainBanner/>
     <UxSection/>
-    <Portfolio/>
+    <Portfolio id="portfolio"/>
     <TeamSection/>
   </div>
 </template>
@@ -12,7 +12,6 @@ import MainBanner from '@/components/MainBanner.vue'
 import UxSection from '@/components/UxSection.vue'
 import Portfolio from '@/components/Portfolio.vue'
 import TeamSection from '@/components/TeamSection.vue'
-
 export default {
   name: 'Home',
   components: {

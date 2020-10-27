@@ -5,7 +5,7 @@
 
       <div class="portfolio-grid-laptop">
         <div class="column" v-for="(value, key) in items" :key="key" >
-          <router-link :to="value.path"><div :id="value.id" class="portfolio-button" :style="{ background: value.background }"><p>{{ value.name }}</p></div></router-link>
+          <router-link :to="value.path"><div :hash="value.id" :id="value.id" class="portfolio-button" :style="{ background: value.background }"><p>{{ value.name }}</p></div></router-link>
         </div>
       </div>
     </section>
@@ -23,21 +23,21 @@ export default {
           name: 'Dish',
           id: 'dish',
           background: '#e41932',
-          path: '/dish',
+          path: '/dish/#dish',
           logo: '../assets/img/tv-logo-oskr-pabon.png'
         },
         {
           name: 'Sproutloud',
           id: 'sproutloud',
           background: '#394047',
-          path: '/sproutloud',
+          path: '/sproutloud/#sproutloud',
           logo: '../assets/img/tv-logo-oskr-pabon.png'
         },
         {
           name: 'Gess',
           id: 'gess',
           background: '#000000',
-          path: '/gess',
+          path: '/gess/#gess',
           logo: '../assets/img/tv-logo-oskr-pabon.png'
         }
       ]
