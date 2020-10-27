@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Dish from '../views/Dish.vue'
+import Sproutloud from '../views/Sproutloud.vue'
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ const routes = [
     path: '/dish',
     name: 'Dish',
     component: Dish
+  },
+  {
+    path: '/sproutloud',
+    name: 'Sproutloud',
+    component: Sproutloud
   }
 ]
 

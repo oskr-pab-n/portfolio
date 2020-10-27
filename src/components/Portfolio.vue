@@ -20,13 +20,6 @@ export default {
     return {
       items: [
         {
-          name: 'Dish',
-          id: 'dish',
-          background: '#e41932',
-          path: '/dish/#dish',
-          logo: '../assets/img/tv-logo-oskr-pabon.png'
-        },
-        {
           name: 'Sproutloud',
           id: 'sproutloud',
           background: '#394047',
@@ -38,6 +31,13 @@ export default {
           id: 'gess',
           background: '#000000',
           path: '/gess/#gess',
+          logo: '../assets/img/tv-logo-oskr-pabon.png'
+        },
+        {
+          name: 'Dish',
+          id: 'dish',
+          background: '#e41932',
+          path: '/dish/#dish',
           logo: '../assets/img/tv-logo-oskr-pabon.png'
         }
       ]
