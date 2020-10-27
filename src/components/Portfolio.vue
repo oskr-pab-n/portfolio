@@ -5,34 +5,17 @@
 
       <div class="portfolio-grid-laptop">
         <div class="column" v-for="(value, key) in items" :key="key" >
-          <div :id="value.id" class="portfolio-button" :style="{ background: value.background }">{{ value.name }}</div>
+          <router-link :to="value.path"><div :id="value.id" class="portfolio-button" :style="{ background: value.background }">{{ value.name }}</div></router-link>
         </div>
-      </div>
-
-      <div class="portfolio-grid-mobile">
-        <agile :slidesToShow="2" :infinite="false">
-          <template v-slot:default>
-            <div class="slide">
-                <h3>slide 1</h3>
-            </div>      
-            <div class="slide">
-                <h3>slide n</h3>
-            </div>
-          </template>
-        </agile>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import { VueAgile } from 'vue-agile' 
 
 export default {
   name: 'Portfolio',
-  components: {
-    agile: VueAgile 
-  },
   data () {
     return {
       items: [
@@ -99,13 +82,6 @@ h3 {
 
     .agile { width: 100%; }
 
-    .portfolio-grid-mobile {
-      align-items: center;
-      display: none;
-      justify-content: center;
-      width: 100%;
-    }
-
     .portfolio-grid-laptop {
       align-items: center;
       display: flex;
@@ -157,13 +133,30 @@ h3 {
     .columns { 
       width: 100%; 
 
+      .portfolio-grid-laptop { width: 100%; }
+
       .column { 
-        padding: 10px 30px;
-        width: 100%; 
+        width: 50%;
+
+        .portfolio-button { width: 100%; }
       }
     }
-    .portfolio-grid-laptop { display: none;}
-    .portfolio-grid-mobile { display: flex;}
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+
+  &:before {
+    background: #fff;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
   }
 }
 </style>

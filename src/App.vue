@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <nav id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-    </nav>
-    <transition name="fade">
+    <transition name="fade" mode="out-in">
       <router-view/>
     </transition>
   </div>
@@ -16,10 +12,55 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
 
   img { max-width: 100%; }
-} 
+}
+
+ul {
+  padding: 0;
+  line-height: 30px;
+
+  li {
+    list-style: none;
+    font-size: 18px;
+  }
+}
+
+.button {
+  background: #000;
+  color: #fff;
+  display: block;
+  font-weight: 800;
+  padding: 15px 30px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.navigation-section {
+  position: absolute;
+  width: 50%;
+
+  #nav {
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+
+    a {
+      font-weight: bold;
+      color: #000000;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    a.router-link-exact-active {
+      color: #D40D54;
+    }
+  }
+}
 
 #app {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -27,25 +68,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 2;
-
-  a {
-    font-weight: bold;
-    color: #000000;
-    margin-right: 20px;
-    text-decoration: none;
-  }
-
-  a.router-link-exact-active {
-    color: #D40D54;
-  }
 }
 
 .fade-enter-active, .fade-leave-active {

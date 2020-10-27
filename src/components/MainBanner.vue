@@ -1,10 +1,9 @@
 <template>
   <div class="home">
     <section class="brand">
-      <img src="../assets/img/oskr-pabon-brand.svg" alt="Oskr Pabon Logo" width="400" height="auto">
+      <img src="../assets/img/oskr-pabon-brand.svg" alt="Oskr Pabon Logo" width="300" height="auto">
     </section>
     <section class="main-illustration">
-      <img src="../assets/img/illustration-oskr-pabon.svg" alt="Oskr Pabon Logo" width="500" height="auto">
     </section>
   </div>
 </template>
@@ -24,7 +23,7 @@ export default {
   width: 100%;
 
   .brand {
-    background: #D40D54;
+    background: #000;
     display: flex;
     height: 100%;
     justify-content: center;
@@ -33,6 +32,10 @@ export default {
   }
 
   .main-illustration {
+    background: url('../assets/img/oskr-pabon-main-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
     padding: 0 30px;
     width: 50%;
   }
@@ -41,7 +44,10 @@ export default {
 @media only screen and (max-width: 768px) {
   .home {
     .brand { width: 100%; }
-    .main-illustration { display: none;}
+    .main-illustration { 
+      background-size: 100%;
+      width: 10%;
+    }
   }
 }
 </style>

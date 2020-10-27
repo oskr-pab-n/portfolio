@@ -4,7 +4,7 @@
       <h3>Team effort</h3>
     </section>
     <section class="column">
-      <p>Currently, the technological industry is growing making products focused in users needs, the Design responsibilities are creating more efficient processes in order to guarantee a correct match between the message and the consumer.</p>
+      <blockquote>Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.</blockquote>
     </section>
   </div>
 </template>
@@ -22,6 +22,7 @@ export default {
   background: #000;
   color: #fff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 50px 30px;
 
@@ -42,5 +43,18 @@ h3 {
   font-size: 52px;
   font-weight: 800;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  h3 { font-size: 30px; }
+  .team {
+    height: auto;
+    padding-bottom: 50px;
+
+    .column { 
+      padding: 10px 30px;
+      width: 100%; 
+    }
+  }
 }
 </style>
