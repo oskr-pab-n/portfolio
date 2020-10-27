@@ -2,6 +2,7 @@
   <div class="dish">
     <section class="columns">
       <article class="column pl80">
+        <router-link to="/"><div class="back-button"></div></router-link>
         <h2>Dish</h2>
         <p>Team effort to create design systems and modular application of mark-up to support styles. Applying good practices for readability, consistency and top-down organization. Designing patterns that will granted the accessibility on the websites.</p>
         <ul>
@@ -39,6 +40,14 @@ p {
 }
 ul { margin-bottom: 40px; }
 li { font-weight: 800; }
+.back-button {
+  background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='far' data-icon='caret-circle-left' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' class='svg-inline--fa fa-caret-circle-left fa-w-16 fa-3x'%3E%3Cpath fill='currentColor' d='M296 157.1v197.8c0 10.7-13 16.1-20.5 8.5l-98.3-98.9c-4.7-4.7-4.7-12.2 0-16.9l98.3-98.9c7.5-7.7 20.5-2.3 20.5 8.4zM256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm0-48c110.5 0 200-89.5 200-200S366.5 56 256 56 56 145.5 56 256s89.5 200 200 200z' class=''%3E%3C/path%3E%3C/svg%3E");
+  padding: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-bottom: 68px;
+  width: 20px;
+}
 .dish {
   align-content: center;
   background: #fff;

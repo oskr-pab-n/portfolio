@@ -5,7 +5,7 @@
 
       <div class="portfolio-grid-laptop">
         <div class="column" v-for="(value, key) in items" :key="key" >
-          <router-link :to="value.path"><div :id="value.id" class="portfolio-button" :style="{ background: value.background }">{{ value.name }}</div></router-link>
+          <router-link :to="value.path"><div :id="value.id" class="portfolio-button" :style="{ background: value.background }"><p>{{ value.name }}</p></div></router-link>
         </div>
       </div>
     </section>
@@ -80,8 +80,6 @@ h3 {
     padding: 50px 0;
     width: 90%;
 
-    .agile { width: 100%; }
-
     .portfolio-grid-laptop {
       align-items: center;
       display: flex;
@@ -99,10 +97,10 @@ h3 {
   cursor: pointer;
   display: flex;
   font-weight: 800;
-  font-size: 16px;
   height: 200px;
   justify-content: center;
   position: relative;
+  text-decoration: none;
   transform: scale(1);
   width: 200px;
   z-index: 1;
@@ -111,6 +109,8 @@ h3 {
   -moz-transition: transform .5s ease-out;
   -ms-transition: transform .5s ease-out;
   transition: transform .5s ease-out;
+
+  p { font-size: 20px; }
 }
 
 .portfolio-button:hover {
