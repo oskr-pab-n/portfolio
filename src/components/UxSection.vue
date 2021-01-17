@@ -1,14 +1,12 @@
 <template>
-  <div class="ux-section">
+  <div id="ux-section" class="ux-section">
     <section class="users-image">
       <img src="../assets/img/oskr-pabon-users-group.png" alt="Oskr Pabon Logo" width="100%" height="auto">
     </section>
     <section class="columns">
       <article class="column">
-        <h2>Experiences for<br>the users needs</h2>
-      </article>
-      <article class="column">
-        <p>Currently, the technological industry is growing making products focused in users needs, the Design responsibilities are creating more efficient processes in order to guarantee a correct match between the message and the consumer.</p>
+        <h2 class="w-100">Let´s make complex problems simple!</h2>
+        <p class="w-100">The solutions must be created with a deep analysis, the strategies should be planned to answer the correct questions, this outcomes unify with armony two different concepts, business growth and users sactisfaction.</p>
       </article>
     </section>
   </div>
@@ -22,21 +20,23 @@ export default {
 
 <style lang="scss" scoped>
 h2 {
-  font-size: 52px;
+  font-size: 2.4em;
   font-weight: 800;
   margin: 0;
 }
 p { 
-  font-size: 25px;
+  font-size: 1.5em;
   text-align: left;
 }
 .ux-section {
   align-content: center;
-  background: #D9DEE2;
+  background: url('../assets/img/second-background-oskr-pabon.jpg');
+  background-position: center;
+  background-size: cover;
   display: flex;
-  height: 100vh;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 40px 0px;
   width: 100%;
 
   .users-image {
@@ -52,14 +52,16 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 20px;
     width: 80%;
 
     .column {
       align-items: center;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       padding: 10px 30px;
-      width: 40%;
+      width: 60%;
     }
   }
 }

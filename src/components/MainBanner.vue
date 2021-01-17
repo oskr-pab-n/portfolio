@@ -1,10 +1,13 @@
 <template>
   <div class="home">
     <section class="brand">
-      <img src="../assets/img/oskr-pabon-brand.svg" alt="Oskr Pabon Logo" width="300" height="auto">
+      <div class="w-100">
+        <img src="../assets/img/oskr-pabon-brand.svg" alt="Oskr Pabon Logo" width="350" height="auto">
+      </div>
+      <h3 class="andale-font">UI/UX Designer</h3>
+      <p class="w-50">Expert creating proficient technological products, applying the necessary tecniques to understand and create solutions that innovate.</p>
     </section>
-    <section class="main-illustration">
-    </section>
+    <a href="#ux-section" class="slide-down-button" v-smooth-scroll></a>
   </div>
 </template>
 
@@ -17,37 +20,81 @@ export default {
 <style lang="scss" scoped>
 .home {
   align-items: center;
+  background: url('../assets/img/oskr-pabon-main-bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
   display: flex;
   height: 100vh;
   justify-content: center;
   width: 100%;
 
-  .brand {
-    background: #000;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    padding: 0 30px;
-    width: 50%;
+  .slide-down-button {
+    background: rgba(0,0,0,0);
+    bottom: 0;
+    display: block;
+    padding: 22px;
+    position: absolute;
+    width: 100%;
+
+    &::before {
+      background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-down' class='svg-inline--fa fa-angle-down fa-w-10' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='%23ffffff' d='M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z'%3E%3C/path%3E%3C/svg%3E");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      bottom: 20px;
+      content: '';
+      right: 48%;
+      padding: 12px;
+      position: absolute;
+    }
   }
 
-  .main-illustration {
-    background: url('../assets/img/oskr-pabon-main-bg.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
+  .brand {
+    align-content: center;
+    color: #fff;
+    display: flex;
+    height: 100%;
+    justify-content: left;
+    flex-wrap: wrap;
     padding: 0 30px;
-    width: 50%;
+    text-align: left;
+    width: 60%;
+
+    .w-50 { width: 50%; }
+    p {
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.4em; 
+    }
+
+    h3 {
+      font-family: 'Andale Mono Regular', sans-serif;
+      color: #d40054;
+      font-size: 1.3em;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      width: 100%;
+    }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .home {
-    .brand { width: 100%; }
+    background-position: center;
+
+    .brand { 
+      width: 100%; 
+      
+      .w-50 { width: 100%; }
+    }
     .main-illustration { 
       background-size: 100%;
       width: 10%;
     }
   }
+}
+
+@media only screen and (max-width: 425px) {
+  .home { background-position: right; }
 }
 </style>

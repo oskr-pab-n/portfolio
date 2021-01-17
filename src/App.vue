@@ -7,6 +7,14 @@
 </template>
 
 <style lang="scss">
+@font-face {
+  font-family: 'Andale Mono Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Andale Mono Regular'), url('assets/fonts/ANDALEMO.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -39,6 +47,8 @@ ul {
   width: fit-content;
 }
 
+.w-100 { width: 100%; }
+
 .navigation-section {
   position: absolute;
   width: 50%;
@@ -64,7 +74,7 @@ ul {
 }
 
 #app {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

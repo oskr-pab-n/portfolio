@@ -13,7 +13,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'Portfolio',
   data () {
@@ -27,17 +26,17 @@ export default {
           logo: '../assets/img/tv-logo-oskr-pabon.png'
         },
         {
-          name: 'Gess',
-          id: 'gess',
-          background: '#000000',
-          path: '/gess/#gess',
-          logo: '../assets/img/tv-logo-oskr-pabon.png'
-        },
-        {
           name: 'Dish',
           id: 'dish',
           background: '#e41932',
           path: '/dish/#dish',
+          logo: '../assets/img/tv-logo-oskr-pabon.png'
+        },
+        {
+          name: 'Gess',
+          id: 'gess',
+          background: '#000000',
+          path: '/gess/#gess',
           logo: '../assets/img/tv-logo-oskr-pabon.png'
         }
       ]
