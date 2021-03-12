@@ -5,7 +5,7 @@
 
       <div class="portfolio-grid-laptop">
         <div class="column" v-for="(value, key) in items" :key="key" >
-          <router-link :to="value.path"><div :hash="value.id" :id="value.id" class="portfolio-button" :style="{ background: value.background }"><p>{{ value.name }}</p></div></router-link>
+          <router-link :to="value.path"><div :hash="value.id" :id="value.id" class="portfolio-button" :style="{ 'background-image': 'url(' + value.background + ')' }"><p>{{ value.name }}</p></div></router-link>
         </div>
       </div>
     </section>
@@ -21,23 +21,20 @@ export default {
         {
           name: 'Sproutloud',
           id: 'sproutloud',
-          background: '#394047',
-          path: '/sproutloud/#sproutloud',
-          logo: '../assets/img/tv-logo-oskr-pabon.png'
+          background: require('../assets/img/sproutloud-oskr-pabon.jpg'),
+          path: '/sproutloud/#sproutloud'
         },
         {
           name: 'Dish',
           id: 'dish',
-          background: '#e41932',
-          path: '/dish/#dish',
-          logo: '../assets/img/tv-logo-oskr-pabon.png'
+          background: require('../assets/img/dish-oskr-pabon.jpg'),
+          path: '/dish/#dish'
         },
         {
           name: 'Gess',
           id: 'gess',
-          background: '#000000',
-          path: '/gess/#gess',
-          logo: '../assets/img/tv-logo-oskr-pabon.png'
+          background: require('../assets/img/gess-oskr-pabon.jpg'),
+          path: '/gess/#gess'
         }
       ]
     }
@@ -83,25 +80,33 @@ h3 {
       align-items: center;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: left;
       margin-bottom: 60px;
-      width: 60%;
+      width: 80%;
+
+      .column { 
+        margin-left: 20px;
+        width: 30%; 
+      }
     }
   }
 }
 
 .portfolio-button {
-  align-items: center;
+  align-items: top;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
   color: #fff;
   cursor: pointer;
   display: flex;
   font-weight: 800;
-  height: 200px;
-  justify-content: center;
+  height: 500px;
+  justify-content: left;
   position: relative;
   text-decoration: none;
   transform: scale(1);
-  width: 200px;
+  width: 100%;
   z-index: 1;
 
   -webkit-transition: transform .5s ease-out;
@@ -109,7 +114,11 @@ h3 {
   -ms-transition: transform .5s ease-out;
   transition: transform .5s ease-out;
 
-  p { font-size: 20px; }
+  p { 
+    color: #fff;
+    font-size: 2em;
+    padding: 40px;
+  }
 }
 
 .portfolio-button:hover {
@@ -132,12 +141,15 @@ h3 {
     .columns { 
       width: 100%; 
 
-      .portfolio-grid-laptop { width: 100%; }
+      .portfolio-grid-laptop { 
+        width: 100%; 
 
-      .column { 
-        width: 50%;
+        .column { 
+        margin-right: 20px;
+        width: 100%;
+      }
 
-        .portfolio-button { width: 100%; }
+      .portfolio-button { width: 100%; }
       }
     }
   }
