@@ -62,17 +62,17 @@ export default {
 
     .w-50 { width: 50%; }
     p {
-      font-size: 25px;
-      font-weight: 500;
+      font-size: 1.1em;
+      font-weight: 300;
       line-height: 1.4em; 
     }
 
     h3 {
-      font-family: 'Andale Mono Regular', sans-serif;
-      color: #d40054;
-      font-size: 1.3em;
+      font-family: 'Lato', sans-serif;
+      font-size: 1.5em;
+      color: #ff005e;
+      font-weight: 800;
       letter-spacing: 4px;
-      text-transform: uppercase;
       width: 100%;
     }
   }

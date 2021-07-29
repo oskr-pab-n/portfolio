@@ -4,10 +4,8 @@
       <img src="../assets/img/oskr-pabon-users-group.png" alt="Oskr Pabon Logo" width="100%" height="auto">
     </section>
     <section class="columns">
-      <article class="column">
-        <h2 class="w-100">Let´s make complex problems simple!</h2>
-        <p class="w-100">The solutions must be created with a deep analysis, the strategies should be planned to answer the correct questions, this outcomes unify with armony two different concepts, business growth and users sactisfaction.</p>
-      </article>
+      <h2 class="column">Let´s make complex problems simple!</h2>
+      <p class="column">The solutions must be created with a deep analysis, the strategies should be planned to answer the correct questions, this outcomes unify with armony two different concepts, business growth and users sactisfaction.</p>
     </section>
   </div>
 </template>
@@ -20,19 +18,21 @@ export default {
 
 <style lang="scss" scoped>
 h2 {
-  font-size: 2.4em;
+  font-size: 2.2em;
   font-weight: 800;
   margin: 0;
 }
 p { 
-  font-size: 1.5em;
+  font-size: 1.1em;
   text-align: left;
+  font-weight: 600;
 }
 .ux-section {
   align-content: center;
   background: url('../assets/img/second-background-oskr-pabon.jpg');
   background-position: center;
   background-size: cover;
+  color: #000;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

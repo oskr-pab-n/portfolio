@@ -31,16 +31,22 @@ export default {
   }
 }
 
+blockquote { 
+  font-size: 1.1em;
+  text-align: left; 
+}
+
 p { 
-  font-size: 25px;
+  font-size: 1.1em;
   text-align: left;
 }
 
 .text-center { text-align: center; }
 
 h3 {
-  display: BLOCK;
-  font-size: 52px;
+  color: #adddff;
+  display: block;
+  font-size: 2.5em;
   font-weight: 800;
   width: 100%;
 }

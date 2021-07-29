@@ -7,57 +7,56 @@ import Gess from '../views/Gess.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home,
-    meta: {
-      title: 'Home',
-      keepAlive: true
-    }
-  },
-  {
-    path: '/dish',
-    name: 'Dish',
-    component: Dish,
-    meta: {
-      title: 'Dish',
-      keepAlive: true
-    }
-  },
-  {
-    path: '/sproutloud',
-    name: 'Sproutloud',
-    component: Sproutloud,
-    meta: {
-      title: 'Sproutloud',
-      keepAlive: true
-    }
-  },
-  {
-    path: '/gess',
-    name: 'Gess',
-    component: Gess,
-    meta: {
-      title: 'Gess',
-      keepAlive: true
-    }
-  }
-]
-
 const router = new VueRouter({
   mode: 'history',
-  hash: false,
-  routes,
+  routes: [
+    {
+      path: '/',
+      name: 'Home',
+      component: Home,
+      meta: {
+        title: 'Home',
+        keepAlive: true
+      }
+    },
+    {
+      path: '/dish',
+      name: 'Dish',
+      component: Dish,
+      meta: {
+        title: 'Dish',
+        keepAlive: true
+      }
+    },
+    {
+      path: '/sproutloud',
+      name: 'Sproutloud',
+      component: Sproutloud,
+      meta: {
+        title: 'Sproutloud',
+        keepAlive: true
+      }
+    },
+    {
+      path: '/gess',
+      name: 'Gess',
+      component: Gess,
+      meta: {
+        title: 'Gess',
+        keepAlive: true
+      }
+    }
+  ],
   scrollBehavior (to, from, savedPosition) {
-    if (savedPosition) {
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        behavior: 'smooth',
+      }
+    } else if (savedPosition) {
       return savedPosition
     } else {
-      if (from.meta.keepAlive) {
-        from.meta.savedPosition = document.body.scrollTop
-      }
-      return { x: 0, y: to.meta.savedPosition || 0 }
+      return { x: 0, y: 0 }
     }
   }
 })

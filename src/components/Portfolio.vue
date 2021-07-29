@@ -119,7 +119,7 @@ h3 {
   transition: transform .5s ease-out;
 
   p { 
-    color: #fff;
+    color: #2c3e50;
     font-size: 2em;
     padding: 40px;
   }
