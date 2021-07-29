@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <transition name="fade" mode="out-in" @after-leave="$root.$emit('triggerScroll')">
-      <router-view/>
+      <keep-alive >
+        <router-view v-if="$route.meta.keepAlive"></router-view>
+      </keep-alive>
+      <router-view v-if="!$route.meta.keepAlive"></router-view>
     </transition>
   </div>
 </template>

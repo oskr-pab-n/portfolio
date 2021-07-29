@@ -2,7 +2,7 @@
   <div class="sproutloud">
     <section id="sproutloud" class="columns">
       <article class="column pl80">
-        <router-link :to="{ name: 'Home', hash: '#portfolio' }"><div class="back-button"></div></router-link>
+        <router-link :to="{ name: 'Home' }"><div class="back-button"></div></router-link>
         <h2>Sproutloud</h2>
         <p>Support product development following consistent patterns, using effective definition procceses including user research, mocking and prototyping.</p>
         <p>Post-lunch track of products and metrics to drive UI and UX decisions.</p>

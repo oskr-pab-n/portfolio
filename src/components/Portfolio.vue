@@ -5,7 +5,11 @@
 
       <div class="portfolio-grid-laptop">
         <div class="column" v-for="(value, key) in items" :key="key" >
-          <router-link :to="value.path"><div :hash="value.id" :id="value.id" class="portfolio-button" :style="{ 'background-image': 'url(' + value.background + ')' }"><p>{{ value.name }}</p></div></router-link>
+          <router-link :to="value.path">
+            <div :id="value.id" class="portfolio-button" :style="{ 'background-image': 'url(' + value.background + ')' }">
+              <p>{{ value.name }}</p>
+            </div>
+          </router-link>
         </div>
       </div>
     </section>
@@ -22,19 +26,19 @@ export default {
           name: 'Sproutloud',
           id: 'sproutloud',
           background: require('../assets/img/sproutloud-oskr-pabon.jpg'),
-          path: '/sproutloud/#sproutloud'
+          path: '/sproutloud'
         },
         {
           name: 'Dish',
           id: 'dish',
           background: require('../assets/img/dish-oskr-pabon.jpg'),
-          path: '/dish/#dish'
+          path: '/dish'
         },
         {
           name: 'Gess',
           id: 'gess',
           background: require('../assets/img/gess-oskr-pabon.jpg'),
-          path: '/gess/#gess'
+          path: '/gess'
         }
       ]
     }
