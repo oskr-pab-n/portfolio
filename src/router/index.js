@@ -8,7 +8,6 @@ import Gess from '../views/Gess.vue'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  mode: 'history',
   routes: [
     {
       path: '/',
@@ -45,6 +44,11 @@ const router = new VueRouter({
         title: 'Gess',
         keepAlive: true
       }
+    },
+    {
+      path: '*',
+      name: 'catchAll',
+      component: Home
     }
   ],
   scrollBehavior (to, from, savedPosition) {
