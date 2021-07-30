@@ -14,9 +14,9 @@
         </ul>
         <a class="button" href="http://sproutloud.com" target="_blank">Visit site</a>
       </article>
-      <article class="column img-large"></article>
+      <article class="column img-large" data-aos="fade-up" data-aos-duration="1000"></article>
       <article class="column split-section">
-        <div class="site-image"></div>
+        <div class="site-image" data-aos="fade-down" data-aos-duration="1000"></div>
         <div class="quote">Make<br>Marketing<br>easy.</div>
       </article>
     </section>
