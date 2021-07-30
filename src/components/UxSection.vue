@@ -3,7 +3,7 @@
     <section class="users-image">
       <img src="../assets/img/oskr-pabon-users-group.png" alt="Oskr Pabon Logo" width="100%" height="auto">
     </section>
-    <section class="columns">
+    <section class="columns" data-aos="fade-up" data-aos-duration="1000">
       <h2 class="column">Let´s make complex problems simple!</h2>
       <p class="column">Throughout a good process, people are in control. Apps usually take over the decision-making adding friction to users mental processes. It is our responsability to find the correct balance between enabling users and avoiding unwanted outcomes. An app can make people feel like they’re in control by keeping interactive elements familiar and predictable, confirming destructive actions, and making it easy to cancel operations, even when they’re already underway.</p>
     </section>

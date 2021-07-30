@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <section class="brand">
-      <div class="w-100">
+      <div class="w-100" data-aos="fade-up" data-aos-duration="3000">
         <img src="../assets/img/oskr-pabon-brand.svg" alt="Oskr Pabon Logo" width="350" height="auto">
       </div>
       <h3 class="andale-font">UI/UX Designer</h3>

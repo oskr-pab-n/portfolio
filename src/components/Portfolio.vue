@@ -4,7 +4,7 @@
       <h3 class="section-title">These are some of my projects</h3>
 
       <div class="portfolio-grid-laptop">
-        <div class="column" v-for="(value, key) in items" :key="key" >
+        <div class="column" data-aos="fade-left" data-aos-duration="1000" v-for="(value, key) in items" :key="key" >
           <router-link :to="value.path">
             <div :id="value.id" class="portfolio-button" :style="{ 'background-image': 'url(' + value.background + ')' }">
               <p>{{ value.name }}</p>
