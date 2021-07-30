@@ -53,9 +53,11 @@ export default {
 @import url('https://unpkg.com/vue-agile/dist/VueAgile.css');
 
 h3 {
-  display: BLOCK;
-  font-size: 52px;
-  font-weight: 800;
+  color: #000;
+  display: block;
+  font-family: 'Apple Garamond', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
   margin: 0 0 40px 0;
   text-align: center;
   width: 100%;
@@ -77,7 +79,7 @@ h3 {
   }
 
   .columns {
-      align-content: space-around;
+    align-content: space-around;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -125,13 +127,14 @@ h3 {
   transition: transform .5s ease-out;
 
   p { 
-    color: #2c3e50;
+    color: #000;
     font-size: 2em;
     margin-top: 0;
     padding: 40px;
   }
 
-  .button { 
+  .button {
+    background: #000;
     padding: 20px 20px;
     height: max-content;
     width: 100%;
@@ -149,7 +152,12 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
-  h2 { font-size: 30px; }
+  h2 {
+    font-size: 30px; 
+  }
+  h3 {
+    font-size: 2em; 
+  }
   .portfolio {
     height: auto;
     padding-bottom: 50px;

@@ -1,12 +1,17 @@
 <template>
   <div class="home">
-    <section class="brand">
-      <div class="w-100" data-aos="fade-up" data-aos-duration="3000">
-        <img src="../assets/img/oskr-pabon-brand.svg" alt="Oskr Pabon Logo" width="350" height="auto">
-      </div>
-      <h3 class="andale-font">UI/UX Designer</h3>
-      <p class="w-50">Specialist creating <strong>aesthetically pleasing products</strong>, applying analytical techniques to find correct solutions for users, identifying biases to have the best outcome for multiple business perspectives.</p>
-    </section>
+    <div class="columns">
+      <section class="brand column">
+        <div class="w-100" data-aos="fade-up" data-aos-duration="3000">
+          <h1>We are called to be architects of the future!</h1>
+          <img class="is-mobile" src="../assets/img/bubble-oskr-pabon.png" alt="" width="200">
+        </div>
+        <h3 class="andale-font">Oskr Pabon</h3>
+        <p class="w-50">Specialist creating <strong>aesthetically pleasing products</strong>, applying analytical techniques to find correct solutions for users, identifying biases to have the best outcome for multiple business perspectives.</p>
+      </section>
+      <section class="column main-img">
+      </section>
+    </div>
     <a href="#ux-section" class="slide-down-button" v-smooth-scroll></a>
   </div>
 </template>
@@ -20,7 +25,7 @@ export default {
 <style lang="scss" scoped>
 .home {
   align-items: center;
-  background: url('../assets/img/oskr-pabon-main-bg.jpg');
+  background: #000;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
@@ -67,16 +72,42 @@ export default {
       line-height: 1.4em; 
     }
 
+    h1 {
+      color: #ec9a42;
+      font-family: 'Apple Garamond', sans-serif;
+      font-size: 5em;
+      line-height: 1em;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+
     h3 {
       font-family: 'Lato', sans-serif;
       font-size: 1.5em;
       color: #ff005e;
       font-weight: 800;
-      letter-spacing: 4px;
+      margin-bottom: 10px;
       width: 100%;
     }
   }
+
+  .columns {
+    display: flex;
+
+    .column {
+      padding: 20px 20px 20px 40px;
+      width: 50%;
+
+      &.main-img {
+        padding: 0;
+        background: url('../assets/img/background-oskr-pabon.jpg');
+        background-size: cover;
+      }
+    }
+  }
 }
+
+.is-mobile { display: none; }
 
 @media only screen and (max-width: 768px) {
   .home {
@@ -84,7 +115,7 @@ export default {
 
     .brand { 
       width: 100%; 
-      margin-bottom: 100px;
+      height: auto;
 
       .w-50 { width: 100%; }
     }
@@ -92,7 +123,27 @@ export default {
       background-size: 100%;
       width: 10%;
     }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      height: inherit;
+
+      .column {
+        padding: 20px 20px 20px 40px;
+        width: 100%;
+
+        h1 { font-size: 3em; }
+
+        &.main-img {
+          padding: 0;
+          height: 200px;
+          background-position-y: 20%;
+          display: none;
+        }
+      }
+    }
   }
+  .is-mobile { display: block; }
 }
 
 @media only screen and (max-width: 425px) {

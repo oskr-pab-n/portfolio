@@ -46,6 +46,7 @@ p {
 h3 {
   color: #ff005e;
   display: block;
+  font-family: 'Apple Garamond', sans-serif;
   font-size: 2.5em;
   font-weight: 800;
   width: 100%;
