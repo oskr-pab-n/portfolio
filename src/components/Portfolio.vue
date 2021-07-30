@@ -8,6 +8,9 @@
           <router-link :to="value.path">
             <div :id="value.id" class="portfolio-button" :style="{ 'background-image': 'url(' + value.background + ')' }">
               <p>{{ value.name }}</p>
+              <router-link :to="value.path" class="button">
+                Read more
+              </router-link>
             </div>
           </router-link>
         </div>
@@ -74,6 +77,7 @@ h3 {
   }
 
   .columns {
+      align-content: space-around;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -89,6 +93,7 @@ h3 {
       width: 80%;
 
       .column { 
+        margin-bottom: 20px;
         margin-left: 20px;
         width: 30%; 
       }
@@ -97,13 +102,14 @@ h3 {
 }
 
 .portfolio-button {
-  align-items: top;
+  align-content: space-between;
   background-position: center;
   background-size: cover;
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
   display: flex;
+  flex-wrap: wrap;
   font-weight: 800;
   height: 500px;
   justify-content: left;
@@ -121,7 +127,14 @@ h3 {
   p { 
     color: #2c3e50;
     font-size: 2em;
+    margin-top: 0;
     padding: 40px;
+  }
+
+  .button { 
+    padding: 20px 20px;
+    height: max-content;
+    width: 100%;
   }
 }
 
@@ -151,9 +164,8 @@ h3 {
         .column { 
         margin-right: 20px;
         width: 100%;
-      }
-
-      .portfolio-button { width: 100%; }
+        }
+        .portfolio-button { width: 100%; }
       }
     }
   }
