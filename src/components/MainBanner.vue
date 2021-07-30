@@ -2,14 +2,14 @@
   <div class="home">
     <div class="columns">
       <section class="brand column">
-        <div class="w-100" data-aos="fade-up" data-aos-duration="3000">
+        <div class="w-100" data-aos="fade-up" data-aos-duration="2000">
           <h1>We are called to be architects of the future!</h1>
           <img class="is-mobile" src="../assets/img/bubble-oskr-pabon.png" alt="" width="200">
         </div>
         <h3 class="andale-font">Oskr Pabon</h3>
         <p class="w-50">Specialist creating <strong>aesthetically pleasing products</strong>, applying analytical techniques to find correct solutions for users, identifying biases to have the best outcome for multiple business perspectives.</p>
       </section>
-      <section class="column main-img">
+      <section class="column main-img" data-aos="fade-left" data-aos-duration="2000">
       </section>
     </div>
     <a href="#ux-section" class="slide-down-button" v-smooth-scroll></a>
@@ -69,14 +69,15 @@ export default {
     p {
       font-size: 1.1em;
       font-weight: 300;
-      line-height: 1.4em; 
+      line-height: 1.4em;
+      margin-top: 0;
     }
 
     h1 {
       color: #ec9a42;
-      font-family: 'Apple Garamond', sans-serif;
+      font-family: 'EB Garamond', serif;
       font-size: 5em;
-      line-height: 1em;
+      line-height: .9em;
       margin-bottom: 10px;
       margin-top: 0;
     }

@@ -55,7 +55,7 @@ export default {
 h3 {
   color: #000;
   display: block;
-  font-family: 'Apple Garamond', sans-serif;
+  font-family: 'EB Garamond', serif;
   font-size: 3em;
   font-weight: bold;
   margin: 0 0 40px 0;

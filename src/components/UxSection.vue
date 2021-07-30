@@ -19,7 +19,7 @@ export default {
 <style lang="scss" scoped>
 h2 {
   color: #000;
-  font-family: 'Apple Garamond', sans-serif;
+  font-family: 'EB Garamond', serif;
   font-size: 2.2em;
   font-weight: 700;
   margin: 0;

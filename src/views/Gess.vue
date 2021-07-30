@@ -33,7 +33,8 @@ h2 {
   font-weight: 800;
   margin: 0;
 }
-p { 
+p {
+  font-family: 'EB Garamond', serif;
   font-size: 18px;
   text-align: left;
 }

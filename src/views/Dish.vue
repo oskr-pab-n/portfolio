@@ -30,6 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 h2 {
+  font-family: 'EB Garamond', serif;
   font-size: 52px;
   font-weight: 800;
   margin: 0;
