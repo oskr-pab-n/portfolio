@@ -156,9 +156,10 @@ li { font-weight: 800; }
         }
 
         &.pl80 { 
-          margin: 70px 0;
+          margin: 30px 0;
           padding-left: 30px;
         }
+        .back-button { margin-bottom: 30px; }
       }
     }
   }

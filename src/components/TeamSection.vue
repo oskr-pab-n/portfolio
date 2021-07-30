@@ -44,7 +44,7 @@ p {
 .text-center { text-align: center; }
 
 h3 {
-  color: #adddff;
+  color: #ff005e;
   display: block;
   font-size: 2.5em;
   font-weight: 800;
