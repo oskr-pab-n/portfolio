@@ -5,7 +5,7 @@
     </section>
     <section class="columns">
       <h2 class="column">Let´s make complex problems simple!</h2>
-      <p class="column">The solutions must be created with a deep analysis, the strategies should be planned to answer the correct questions, this outcomes unify with armony two different concepts, business growth and users sactisfaction.</p>
+      <p class="column">Throughout a good process, people are in control. Apps usually take over the decision-making adding friction to users mental processes. It is our responsability to find the correct balance between enabling users and avoiding unwanted outcomes. An app can make people feel like they’re in control by keeping interactive elements familiar and predictable, confirming destructive actions, and making it easy to cancel operations, even when they’re already underway.</p>
     </section>
   </div>
 </template>

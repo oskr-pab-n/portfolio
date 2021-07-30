@@ -5,7 +5,7 @@
         <img src="../assets/img/oskr-pabon-brand.svg" alt="Oskr Pabon Logo" width="350" height="auto">
       </div>
       <h3 class="andale-font">UI/UX Designer</h3>
-      <p class="w-50">Expert creating proficient technological products, applying the necessary tecniques to understand and create solutions that innovate.</p>
+      <p class="w-50">Specialist creating <strong>aesthetically pleasing products</strong>, applying analytical techniques to find correct solutions for users, identifying biases to have the best outcome for multiple business perspectives.</p>
     </section>
     <a href="#ux-section" class="slide-down-button" v-smooth-scroll></a>
   </div>

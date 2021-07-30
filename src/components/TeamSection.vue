@@ -1,7 +1,7 @@
 <template>
   <div class="team">
     <section class="column text-center">
-      <h3>Team effort</h3>
+      <h3>Why Team work is key?</h3>
     </section>
     <section class="column">
       <blockquote>Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.</blockquote>

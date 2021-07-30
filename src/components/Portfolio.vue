@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio">
     <section class="columns">
-      <h3 class="section-title">Portfolio</h3>
+      <h3 class="section-title">These are some of my projects</h3>
 
       <div class="portfolio-grid-laptop">
         <div class="column" v-for="(value, key) in items" :key="key" >

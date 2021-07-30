@@ -10,7 +10,7 @@
           <li>Web Development</li>
           <li>Inbound Marketing</li>
         </ul>
-        <a class="button" href="http://sproutloud.com" target="_blank">Visit site</a>
+        <a class="button" href="https://gess-inc.com/en/" target="_blank">Visit site</a>
       </article>
       <article class="column img-large"></article>
       <article class="column split-section">
