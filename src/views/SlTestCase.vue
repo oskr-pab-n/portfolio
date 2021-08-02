@@ -25,6 +25,7 @@
         <h2>The process</h2>
         <p>We rely on the priority of products to determine our process. For some urgent features, we use a Lean UX process to have a quick MVP that helps us refine expected functionalities and plan on how the key is to invest in these features base on standard technology business against our own path. </p>
         <p>To apply innovation in our features oriented to key business aspects, we follow the Design thinking methodology to know deeply our user’s needs and journeys, we identify priorities to create a clear path to develop a quality product. This also includes strategies to measure the effectiveness of the product such as necessary logs and support. </p>
+        <img src="../assets/img/design-thinking.png" class="mb20" alt="">
       </article>
       <article>
         <h2>Understanding the Problem</h2>
@@ -40,10 +41,12 @@
       <article>
         <h2>Gathering insights</h2>
         <p>After having all the interviews with users recorded and organized, I shared the transcripts and a presentation to my teammates before meet with them and start an affinity mapping session to synthesize and ideate about the pains identified. This activity with my coworkers provided a clear organization with common themes and features, we collect some ideas to solve the search engine page problems, and additionally a prioritization considering with them these three aspects: Task critically, impact, frequency. With this exercise, we provide a severity score for each theme.</p>
+        <img src="../assets/img/mapping-oskr-pabon.png" class="mb20" alt="Afinity Mapping Sessions - Oskr Pabon - UI UX Designer">
       </article>
       <article>
         <h2>Prioritization</h2>
         <p>This was the resulting share to the product team after analyzing and organizing the session:</p>
+        <img src="../assets/img/epics-oskr-pabon.png" class="mb20" alt="Epic - Oskr Pabon - UI UX Designer">
         <p> categorize these problems into Epics to present to the Product team and Engineers,  it summarizes highlighting key areas of the platform that needed to be addressed from a usability standpoint. This saves us time prioritizing usability issues against business needs and clears the product roadmap for the quarter.</p>
         <p>We conclude that the first Epic we would prioritize would be the SERP(Search Engine Page) redesign due to severity score, UX, and engineering effort required to rebuild it.</p>
       </article>
@@ -64,11 +67,14 @@
           <li>Adding a summary view including additional information of the assets to avoid confusion through the SERP</li>
           <li>Create an autosuggestion tool to show some coincidence while users are typing on the search field</li>
         </ul>
+        <img src="../assets/img/design-process-oskr-pabon.jpg" class="mb20" alt="Afinity Mapping Sessions - Oskr Pabon - UI UX Designer">
       </article>
       <article>
         <h2>Validating Designs</h2>
         <p>After validating and iterating on the wireframes through A/B Testing the high fidelity mocks come to life to be presented to the Development Team and Stakeholders.</p>
         <p>During those sessions, I observe they interacted with the prototype and search for catalog items. The usability session revealed that it was less arduous to find items in the catalog by applying filters and narrow down the options using the tags, it was easy for users to type searches using the autocomplete tool. </p>
+        <img src="../assets/img/search-oskr-pabon.png" class="mb20" alt="Epic - Oskr Pabon - UI UX Designer">
+        <img src="../assets/img/serp-oskr-pabon.jpg" class="mb20" alt="Epic - Oskr Pabon - UI UX Designer">
       </article>
       <article>
         <h2>Developing Designs</h2>
@@ -84,6 +90,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.mb20 { margin-bottom: 20px; }
 .study-case {
   text-align: left;
   padding: 40px;
