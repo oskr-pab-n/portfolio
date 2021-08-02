@@ -40,7 +40,7 @@
       </article>
       <article>
         <h2>Gathering insights</h2>
-        <p>After having all the interviews with users recorded and organized, I shared the transcripts and a presentation to my teammates before meet with them and start an affinity mapping session to synthesize and ideate about the pains identified. This activity with my coworkers provided a clear organization with common themes and features, we collect some ideas to solve the search engine page problems, and additionally a prioritization considering with them these three aspects: Task critically, impact, frequency. With this exercise, we provide a severity score for each theme.</p>
+        <p>After having all the interviews with users recorded and organized, I shared the transcripts and a presentation to my teammates to meet with them and start an affinity mapping session to synthesize and ideate about the pains identified. This activity with my coworkers provided a clear organization with common themes and features, we collect some ideas to solve the search engine page problems, and additionally a prioritization considering with them these three aspects: Task critically, impact, frequency. With this exercise, we provide a severity score for each theme.</p>
         <img src="../assets/img/mapping-oskr-pabon.png" class="mb20" alt="Afinity Mapping Sessions - Oskr Pabon - UI UX Designer">
       </article>
       <article>
@@ -77,9 +77,19 @@
         <img src="../assets/img/serp-oskr-pabon.jpg" class="mb20" alt="Epic - Oskr Pabon - UI UX Designer">
       </article>
       <article>
-        <h2>Developing Designs</h2>
+        <h2>Developing the Designs</h2>
+        <p>I worked closely with the development team to spec out any missing interactions that were not covered in the high fidelity mockups. During the implementation we use the library builded in Vue.js that came handy to manage the consistency across the visual elements.</p>
+        <p>I conducted a UX review of each front-end ticket that was implemented to ensure it was aligned with the designs before it went live.</p>
+      </article>
+      <article>
+        <h2>Results</h2>
+        <p>Since the implementation of the new SERP, we have seen a significant decrease in the number of complaints lodged through the service desk. Additionally, I have received positive feedback from users about the consistency in the interface and how easy is for them to find items in the catalog, saving them a large proportion of their time. </p>
+        <p>We create an additional strategy to measure latency per account and logs to know how much time users were spending finding items using the SERP page, this help us on keeping an eye on the performance of this feature and will provide data to analyze future break downs.</p>
+        <img src="../assets/img/graphic-oskr-pabon.png" class="mb20" alt="Graphics post lunch - Oskr Pabon - UI UX Designer">
       </article>
     </section>
+    <hr class="mb50">
+    <router-link class="button is-outlined mt20" :to="{ name: 'Home', hash: '#study' }">Go back</router-link>
   </div>
 </template>
 
@@ -89,11 +99,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" scoped>ç
+hr { margin-block-end: 50px; }
+.mt20 { margin-top: 20px; }
 .mb20 { margin-bottom: 20px; }
 .study-case {
   text-align: left;
-  padding: 40px;
+  padding: 40px 40px 80px 40px;
   width: 800px;
   margin: 0 auto;
 }
