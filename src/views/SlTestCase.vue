@@ -114,7 +114,7 @@ hr { margin-block-end: 50px; }
 }
 h1 {
   font-family: 'EB Garamond', serif;
-  font-size: 52px;
+  font-size: 3em;
   font-weight: 800;
 }
 h2 {
@@ -124,6 +124,7 @@ h2 {
 p { 
   font-size: 18px;
   text-align: left;
+  line-height: 1.5em;
 }
 ul {
   list-style-type: disc;
@@ -131,6 +132,7 @@ ul {
   li {
     list-style: disc;
     margin-left: 40px;
+    line-height: 1.5em;
   }
 }
 .back-button {
@@ -165,7 +167,8 @@ ul {
 }
 
 @media only screen and (max-width: 800px) {
-  h2 { font-size: 30px; }
+  h1 { font-size: 2.4em; }
+  h2 { font-size: 1.2em; }
   .study-case {
     text-align: left;
     padding: 0;
