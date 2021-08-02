@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Dish from '../views/Dish.vue'
+import SlTestCase from '../views/SlTestCase.vue'
 import Sproutloud from '../views/Sproutloud.vue'
 import Gess from '../views/Gess.vue'
 
@@ -25,7 +26,7 @@ const router = new VueRouter({
       name: 'Dish',
       component: Dish,
       meta: {
-        title: 'Dish',
+        title: 'Dish - Oskr Pabon',
         keepAlive: true
       }
     },
@@ -34,7 +35,7 @@ const router = new VueRouter({
       name: 'Sproutloud',
       component: Sproutloud,
       meta: {
-        title: 'Sproutloud',
+        title: 'Sproutloud - Oskr Pabon',
         keepAlive: true
       }
     },
@@ -43,7 +44,16 @@ const router = new VueRouter({
       name: 'Gess',
       component: Gess,
       meta: {
-        title: 'Gess',
+        title: 'Gess Tech. - Oskr Pabon',
+        keepAlive: true
+      }
+    },
+    {
+      path: '/sl-test-case',
+      name: 'Sproutloud Test Case',
+      component: SlTestCase,
+      meta: {
+        title: 'Sproutloud Test Case - Oskr Pabon',
         keepAlive: true
       }
     },

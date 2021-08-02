@@ -2,7 +2,7 @@
   <div class="dish">
     <section id="dish" class="columns">
       <article class="column pl80">
-        <router-link :to="{ name: 'Home', hash: '#portfolio' }"><div class="back-button"></div></router-link>
+        <router-link :to="{ name: 'Home', hash: '#dish' }"><div class="back-button"></div></router-link>
         <h2>Dish</h2>
         <p>Team effort to create design systems and modular application of mark-up to support styles. Applying good practices for readability, consistency and top-down organization. Designing patterns that will granted the accessibility on the websites.</p>
         <ul>

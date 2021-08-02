@@ -2,6 +2,7 @@
   <div class="home">
     <MainBanner/>
     <UxSection/>
+    <study-case/>
     <Portfolio id="portfolio"/>
     <TeamSection/>
   </div>
@@ -12,6 +13,7 @@ import MainBanner from '@/components/MainBanner.vue'
 import UxSection from '@/components/UxSection.vue'
 import Portfolio from '@/components/Portfolio.vue'
 import TeamSection from '@/components/TeamSection.vue'
+import StudyCase from '@/components/StudyCase.vue'
 
 export default {
   name: 'Home',
@@ -19,7 +21,8 @@ export default {
     MainBanner,
     UxSection,
     Portfolio,
-    TeamSection
+    TeamSection,
+    StudyCase
   }
 }
 </script>

@@ -1,12 +1,11 @@
 <template>
-  <div class="home">
+  <div class="home" id="banner">
     <div class="columns">
       <section class="brand column">
         <div class="w-100" data-aos="fade-up" data-aos-duration="2000">
           <h1>We are called to be architects of the future!</h1>
           <img class="is-mobile" src="../assets/img/bubble-oskr-pabon.png" alt="" width="200">
         </div>
-        <h3 class="andale-font">Oskr Pabon</h3>
         <p class="w-50">Specialist creating <strong>aesthetically pleasing products</strong>, applying analytical techniques to find correct solutions for users, identifying biases to have the best outcome for multiple business perspectives.</p>
       </section>
       <section class="column main-img" data-aos="fade-left" data-aos-duration="2000">

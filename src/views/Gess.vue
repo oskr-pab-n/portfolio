@@ -2,7 +2,7 @@
   <div class="sproutloud">
     <section id="sproutloud" class="columns">
       <article class="column pl80">
-        <router-link :to="{ name: 'Home', hash: '#portfolio' }"><div class="back-button"></div></router-link>
+        <router-link :to="{ name: 'Home', hash: '#gess' }"><div class="back-button"></div></router-link>
         <h2>Gess</h2>
         <p>Website redesign, understanding prospect leads to generate retention and matching with marketing tactics.</p>
         <ul>
