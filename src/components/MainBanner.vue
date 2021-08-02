@@ -121,6 +121,7 @@ export default {
     .brand { 
       width: 100%; 
       height: auto;
+      padding: 20px;
 
       .w-50 { width: 100%; }
     }
@@ -134,7 +135,7 @@ export default {
       height: inherit;
 
       .column {
-        padding: 20px 20px 20px 40px;
+        padding: 30px 20px 50px 20px;
         width: 100%;
 
         h1 { font-size: 3em; }
