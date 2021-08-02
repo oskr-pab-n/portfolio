@@ -6,12 +6,12 @@
           <h1>We are called to be architects of the future!</h1>
           <img class="is-mobile" src="../assets/img/bubble-oskr-pabon.png" alt="" width="200">
         </div>
-        <p class="w-50">Specialist creating <strong>aesthetically pleasing products</strong>, applying analytical techniques to find correct solutions for users, identifying biases to have the best outcome for multiple business perspectives.</p>
+        <p class="pt20 w-50">Specialist creating <strong>aesthetically pleasing products</strong>, applying analytical techniques to find correct solutions for users, identifying biases to have the best outcome for multiple business perspectives.</p>
       </section>
       <section class="column main-img" data-aos="fade-left" data-aos-duration="2000">
       </section>
     </div>
-    <a href="#ux-section" class="slide-down-button" v-smooth-scroll></a>
+    <a href="#ux-section" class="slide-down-button is-desktop" v-smooth-scroll></a>
   </div>
 </template>
 
@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.pt-20 { padding-top: 20px; }
 .home {
   align-items: center;
   background: #000;
@@ -64,7 +65,10 @@ export default {
     text-align: left;
     width: 60%;
 
-    .w-50 { width: 50%; }
+    .w-50 {
+      padding-top: 20px;
+      width: 50%; 
+    }
     p {
       font-size: 1.1em;
       font-weight: 300;
@@ -110,8 +114,10 @@ export default {
 .is-mobile { display: none; }
 
 @media only screen and (max-width: 768px) {
+  .is-desktop { display: none !important; }
   .home {
     background-position: center;
+    height: auto;
 
     .brand { 
       width: 100%; 

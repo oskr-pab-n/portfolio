@@ -4,7 +4,7 @@
       <h3>Learn about my process</h3>
     </section>
     <section class="column">
-      <p>Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.</p>
+      <p>After a review of data generated from App logs and trends, it was identified the Search Engine page is a critical frustration feature for users while performing day-to-day tasks...</p>
       <router-link :to="{name: 'Sproutloud Test Case'}" class="button">
         Sproutloud Study Case
       </router-link>
