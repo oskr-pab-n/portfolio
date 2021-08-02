@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <section class="left">
-        <router-link :to="{ name: 'Home', hash: '#banner' }"><h3>Oskr Pabon</h3></router-link>
+        <router-link :to="{ name: 'Home', hash: '#nav' }"><h3>Oskr Pabon</h3></router-link>
         <ul>
           <li>
             <router-link class="button" :to="{ name: 'Home', hash: '#study' }">Study Case</router-link>
