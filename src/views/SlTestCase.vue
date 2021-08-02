@@ -142,56 +142,13 @@ ul {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   h2 { font-size: 30px; }
-  .sproutloud {
-    height: auto;
-    padding-bottom: 50px;
-
-    .users-image { margin-bottom: 30px; }
-    .columns { 
-      display: block;
-
-      .column { 
-        padding: 30px;
-        width: 80%;
-
-        &.img-large {
-          background: url('../assets/img/sl-oskr-pabon.jpg');
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          height: 100px;
-          width: 83%;
-        }
-
-        &.split-section {
-          align-items: center;
-          height: 151px;
-          justify-items: center;
-          padding: 0;
-          width: 100%;
-          flex-direction: row;
-
-          .site-image {
-            height: 100%;
-            width: 100%;
-          }
-
-          .quote {
-            font-size: 24px;
-            padding: 0;
-            width: 30%∫;
-          }
-        }
-
-        &.pl80 { 
-          margin: 30px 0;
-          padding-left: 30px;
-        }
-        .back-button { margin-bottom: 30px; }
-      }
-    }
+  .study-case {
+    text-align: left;
+    padding: 40px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 </style>

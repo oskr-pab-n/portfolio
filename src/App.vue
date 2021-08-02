@@ -161,4 +161,14 @@ ul {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 100%;
+    padding: 10px 20px;
+
+    ul { margin: 0 0 0 20px; }
+    li { margin-right: 10px; }
+  }
+}
 </style>
