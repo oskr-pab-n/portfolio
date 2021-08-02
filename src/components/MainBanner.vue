@@ -11,7 +11,6 @@
       <section class="column main-img" data-aos="fade-left" data-aos-duration="2000">
       </section>
     </div>
-    <a href="#ux-section" class="slide-down-button is-desktop" v-smooth-scroll></a>
   </div>
 </template>
 
@@ -29,7 +28,7 @@ export default {
   background-attachment: fixed;
   background-size: cover;
   display: flex;
-  height: 100vh;
+  height: 80vh;
   justify-content: center;
   width: 100%;
 

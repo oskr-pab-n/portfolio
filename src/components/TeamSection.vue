@@ -4,7 +4,7 @@
       <h3>Why Team work is key?</h3>
     </section>
     <section class="column">
-      <blockquote>Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.</blockquote>
+      <p>Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.</p>
     </section>
   </div>
 </template>
@@ -56,7 +56,7 @@ h3 {
   h3 { font-size: 30px; }
   .team {
     height: auto;
-    padding-bottom: 50px;
+    padding: 50px 0 50px 0;
 
     .column { 
       padding: 10px 30px;

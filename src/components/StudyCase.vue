@@ -38,6 +38,7 @@ export default {
   background: #000;
   border: 2px solid #fff;
   color: #fff;
+  margin-top: 20px;
 
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
@@ -80,7 +81,7 @@ h3 {
   h3 { font-size: 30px; }
   .team {
     height: auto;
-    padding-bottom: 50px;
+    padding: 50px 0 50px 0;
 
     .column { 
       padding: 10px 30px;
