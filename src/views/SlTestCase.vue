@@ -87,9 +87,9 @@
         <p>We create an additional strategy to measure latency per account and logs to know how much time users were spending finding items using the SERP page, this help us on keeping an eye on the performance of this feature and will provide data to analyze future break downs.</p>
         <img src="../assets/img/graphic-oskr-pabon.png" class="mb20" alt="Graphics post lunch - Oskr Pabon - UI UX Designer">
       </article>
+      <hr class="mb50">
+      <router-link class="button is-outlined mt20" :to="{ name: 'Home', hash: '#study' }">Go back</router-link>
     </section>
-    <hr class="mb50">
-    <router-link class="button is-outlined mt20" :to="{ name: 'Home', hash: '#study' }">Go back</router-link>
   </div>
 </template>
 
@@ -105,9 +105,12 @@ hr { margin-block-end: 50px; }
 .mb20 { margin-bottom: 20px; }
 .study-case {
   text-align: left;
-  padding: 40px 40px 80px 40px;
   width: 800px;
   margin: 0 auto;
+
+  .columns {
+      padding: 40px 40px 80px 40px;
+  }
 }
 h1 {
   font-family: 'EB Garamond', serif;
@@ -165,9 +168,11 @@ ul {
   h2 { font-size: 30px; }
   .study-case {
     text-align: left;
-    padding: 40px;
+    padding: 0;
     width: 100%;
     margin: 0 auto;
+
+    .columns { padding: 20px; }
   }
 }
 </style>
